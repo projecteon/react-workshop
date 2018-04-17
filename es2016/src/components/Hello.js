@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-class Hello extends React.Component {
-  render() {
-    return React.createElement('div', null, `Hello ${this.props.name}`);
-  }
+const Hello = (props) => {
+  return React.createElement('div', null, `Hello ${props.name}`);
 }
 
 Hello.propTypes = {

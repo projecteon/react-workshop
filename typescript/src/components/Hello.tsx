@@ -4,14 +4,12 @@ type HelloPropType = {
   name?: string;
 }
 
-class Hello extends React.Component<HelloPropType, {}> {
-  static defaultProps: Partial<HelloPropType> = {
-    name: 'Stranger'
-  };
+const Hello: React.StatelessComponent<HelloPropType> = (props: HelloPropType) => {
+  return <div>Hello {props.name}</div>;
+}
 
-  render() {
-    return <div>Hello {this.props.name}</div>;
-  }
+Hello.defaultProps = {
+  name: 'Stranger'
 }
 
 export default Hello;
