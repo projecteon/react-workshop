@@ -1,0 +1,37 @@
+{
+  "name": "react-workshop-typescript",
+  "version": "1.0.0",
+  "description": "Workshop to implement a simple TODO list webpage using React",
+  "license": "MIT",
+  "main": "index.tsx",
+  "scripts": {
+    "build": "webpack --mode development --config webpack.config.js",
+    "start": "webpack-dev-server --mode development --hot --history-api-fallback --open"
+  },
+  "dependencies": {
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.3.12",
+    "@types/react-dom": "16.0.5",
+    "@types/react-redux": "5.0.18",
+    "@types/webpack": "4.1.4",
+    "@types/webpack-env": "1.13.6",
+    "awesome-typescript-loader": "5.0.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "eslint": "4.19.1",
+    "react-hot-loader": "4.1.2",
+    "tslint": "5.9.1",
+    "typescript": "2.8.1",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.0.15",
+    "webpack-dev-server": "3.1.3"
+  }
+}
