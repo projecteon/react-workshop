@@ -20,7 +20,14 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.ts(x)$/, exclude: /node_modules/, loader: ['babel-loader', 'awesome-typescript-loader'] }
+      {
+        test: /\.ts(x)$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'babel-loader' },
+          { loader: 'awesome-typescript-loader' }
+        ]
+      }
     ]
   }
 }

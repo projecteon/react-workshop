@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { hot } from 'react-hot-loader'
+import * as React from 'react';
+import { hot } from 'react-hot-loader';
 
-import Hello from './Hello'
+import Hello from './Hello';
 
 type RootStateType = {
   counter: number;
-}
+};
 
 class Root extends React.Component<{}, RootStateType> {
   constructor(props: {}) {
@@ -25,8 +25,8 @@ class Root extends React.Component<{}, RootStateType> {
               <Hello />
               <Hello name='Xledger' />
               <button onClick={this.onCounterClick}>I've been clicked {this.state.counter} times</button>
-            </div>
+            </div>;
   }
 }
 
-export default hot(module)(Root)
+export default hot(module)(Root);
