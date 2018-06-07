@@ -7,4 +7,5 @@
 packages/
 Packages/
 .vs/
+dist/
 node_modules/
