@@ -1,23 +1,27 @@
-import { INCREASE_COUNTER, DECREASE_COUNTER } from '../constants/ToDo';
+export enum ToDoActionTypes {
+  IncreaseCounter = 'IncreaseCounter',
+  DecreaseCounter = 'DecreaseCounter',
+}
+
 
 export type IncreaseCounterAction = {
-  type: INCREASE_COUNTER;
+  type: ToDoActionTypes.IncreaseCounter;
 };
 
 export type DecreaseCounterAction = {
-  type: DECREASE_COUNTER;
+  type: ToDoActionTypes.DecreaseCounter;
 };
 
 export type ToDoActions = IncreaseCounterAction | DecreaseCounterAction;
 
 export function increaseCounter(): IncreaseCounterAction {
   return {
-    type: INCREASE_COUNTER,
+    type: ToDoActionTypes.IncreaseCounter,
   };
 }
 
 export function decreaseCounter(): DecreaseCounterAction {
   return {
-    type: DECREASE_COUNTER,
+    type: ToDoActionTypes.DecreaseCounter,
   };
 }
